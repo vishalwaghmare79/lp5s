@@ -1,0 +1,27 @@
+open google colab 
+file newnote book
+click on runtime > change runtime type > Hardware accelerator > select > T4 GPU
+
+after that 
+type 1st cammand 
+!nvcc --version
+2nd
+!pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
+3rd
+%load_ext nvcc4jupyter
+4th 
+%%cuda 
+and paste code and run 
+
+
+C++ file run 
+g++ -fopenmp filename.cpp -o filename
+./filename
+
+for threads 
+expert OMP_NUM_THREADS=4
+
+
+Sublime var 
+ctrl+B
+
